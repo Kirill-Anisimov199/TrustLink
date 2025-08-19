@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrustLink — Гарант сделок по цифровым аккаунтам</title>
+  <meta name="description" content="TrustLink — надёжный гарант: безопасные и быстрые сделки по цифровым активам. Отзывы, преимущества, пошаговый процесс, контакты." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:title" content="TrustLink — Гарант сделок" />
+  <meta property="og:description" content="Безопасные сделки. Реальные отзывы. Быстро и честно." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a'
+            },
+            accent: {
+              500: '#8b5cf6',
+              600: '#7c3aed'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 25px -10px rgba(0,0,0,0.25)'
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "Segoe UI", "Roboto", "Arial", "sans-serif"]
+          }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+  
+  <!-- JSON-LD (Schema.org) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TrustLink",
+      "url": "https://TrustLink.example",
+      "description": "Надёжный гарант сделок по цифровым активам",
+      "sameAs": [
+        "https://t.me/TrustLink"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "availableLanguage": ["ru", "kk", "en"],
+        "url": "https://t.me/Kirilla02"
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+  <!-- Sticky Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-slate-950/70 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-2">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 to-accent-600 text-white shadow-soft">TL</span>
+          <span class="font-semibold tracking-tight">TrustLink</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#advantages" class="hover:text-brand-600">Преимущества</a>
+          <a href="#process" class="hover:text-brand-600">Как это работает</a>
+          <a href="#reviews" class="hover:text-brand-600">Отзывы</a>
+          <a href="#pricing" class="hover:text-brand-600">Тариф</a>
+          <a href="#faq" class="hover:text-brand-600">FAQ</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="themeToggle" class="rounded-xl border border-slate-200 dark:border-slate-800 px-3 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-900" aria-label="Переключить тему">🌓</button>
+          <a href="https://t.me/TrustLink" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2">Связаться</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-50 to-white dark:from-slate-900/40 dark:to-slate-950"></div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
+            Надёжный гарант <span class="text-brand-600">цифровых сделок</span>
+          </h1>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">Быстро. Безопасно. Прозрачно. Более <span class="font-semibold">100+</span> успешных операций с цифровыми активами. *Мы работаем только в рамках правил платформ и действующего законодательства.*</p>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a href="https://t.me/kirilla02" target="_blank" class="inline-flex items-center gap-2 rounded-2xl bg-brand-600 px-6 py-3 text-white shadow-soft hover:bg-brand-700">
+              🚀 Начать сделку в Telegram
+            </a>
+            <a href="#process" class="inline-flex items-center gap-2 rounded-2xl border border-slate-200 px-6 py-3 hover:bg-slate-50 dark:border-slate-800 dark:hover:bg-slate-900">Как это работает</a>
+          </div>
+          <div class="mt-6 flex items-center gap-6 text-sm text-slate-500 dark:text-slate-400">
+            <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-green-500"></span>Онлайн сегодня</div>
+            <div>Ответ в среднем: 5–10 минут</div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div class="rounded-2xl bg-brand-50 p-4 dark:bg-slate-800">
+                <div class="text-slate-500">Успешных сделок</div>
+                <div class="mt-1 text-3xl font-bold">100+</div>
+              </div>
+              <div class="rounded-2xl bg-brand-50 p-4 dark:bg-slate-800">
+                <div class="text-slate-500">Среднее время</div>
+                <div class="mt-1 text-3xl font-bold">15 мин</div>
+              </div>
+              <div class="rounded-2xl bg-brand-50 p-4 dark:bg-slate-800">
+                <div class="text-slate-500">Споры решены</div>
+                <div class="mt-1 text-3xl font-bold">98%</div>
+              </div>
+              <div class="rounded-2xl bg-brand-50 p-4 dark:bg-slate-800">
+                <div class="text-slate-500">Рейтинг</div>
+                <div class="mt-1 text-3xl font-bold">4.9/5</div>
+              </div>
+            </div>
+            <div class="mt-6 rounded-2xl border border-dashed border-slate-200 p-4 text-xs text-slate-500 dark:border-slate-700">  Все сделки подтверждены отзывами клиентов и переписками. У нас более 100+ успешных сделок, каждая из которых прошла через честный и прозрачный процесс.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages -->
+  <section id="advantages" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tight">Почему <span class="text-brand-600">TrustLink</span>?</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Минимум рисков, максимум прозрачности. Чёткие правила и быстрые сделки.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Card 1 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <div class="text-2xl">🔒</div>
+          <h3 class="mt-3 font-semibold">Безопасность</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Эскроу-подход: актив и средства передаются только после выполнения условий.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <div class="text-2xl">⚡</div>
+          <h3 class="mt-3 font-semibold">Скорость</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Средняя сделка — до 15 минут, без лишних ожиданий.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <div class="text-2xl">🧭</div>
+          <h3 class="mt-3 font-semibold">Прозрачные правила</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Фиксируем условия сделки заранее. Никаких скрытых комиссий.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <div class="text-2xl">🕵️</div>
+          <h3 class="mt-3 font-semibold">Конфиденциальность</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Берегу персональные данные и не храню лишнего.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tight">Как проходит сделка</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Три простых шага — и все довольны.</p>
+      </div>
+
+      <ol class="mt-10 grid gap-6 lg:grid-cols-3">
+        <li class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <div class="text-sm text-slate-500">Шаг 1</div>
+          <h3 class="mt-1 font-semibold">Фиксируем условия</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Покупатель и продавец описывают актив и сумму. Я подтверждаю правила сделки.</p>
+        </li>
+        <li class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <div class="text-sm text-slate-500">Шаг 2</div>
+          <h3 class="mt-1 font-semibold">Эскроу‑хранение</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Получаю оплату и доступ к активу на хранение до выполнения условий.</p>
+        </li>
+        <li class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <div class="text-sm text-slate-500">Шаг 3</div>
+          <h3 class="mt-1 font-semibold">Передача сторонам</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Передаю актив покупателю, средства продавцу. Чек‑лист закрытия и отзыв.</p>
+        </li>
+      </ol>
+
+      <div class="mt-8 text-center">
+        <a href="https://t.me/kirilla02" target="_blank" class="inline-flex items-center gap-2 rounded-2xl bg-accent-600 px-6 py-3 text-white shadow-soft hover:bg-accent-600/90">Начать сейчас</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tight">Тариф и условия</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Прозрачно и без сюрпризов. Комиссия взимается только за успешно проведённую сделку.</p>
+      </div>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-2">
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <h3 class="text-xl font-semibold">Базовый</h3>
+          <p class="mt-1 text-slate-600 dark:text-slate-300">Подходит для большинства сделок.</p>
+          <div class="mt-6 text-4xl font-extrabold">15% <span class="align-middle text-base font-medium text-slate-500">(мин. 3000 ₽)</span></div>
+          <ul class="mt-6 space-y-3 text-sm text-slate-700 dark:text-slate-300">
+            <li>✔ Фиксация условий сделки</li>
+            <li>✔ Проверка базовой валидности актива</li>
+            <li>✔ Эскроу‑хранение и разруливание спорных моментов</li>
+            <li>✔ Поддержка в Telegram</li>
+          </ul>
+          <a href="https://t.me/kirilla02" target="_blank" class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-brand-600 px-6 py-3 text-white shadow-soft hover:bg-brand-700">Оформить</a>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <h3 class="text-xl font-semibold">Про</h3>
+          <p class="mt-1 text-slate-600 dark:text-slate-300">Для крупных сумм и серии сделок.</p>
+          <div class="mt-6 text-4xl font-extrabold">Договорная</div>
+          <ul class="mt-6 space-y-3 text-sm text-slate-700 dark:text-slate-300">
+            <li>✔ Индивидуальные условия и SLA</li>
+            <li>✔ Расширенная проверка активов</li>
+            <li>✔ Приоритетная поддержка</li>
+            <li>✔ Ежемесячная отчётность</li>
+          </ul>
+          <a href="https://t.me/kirilla02" target="_blank" class="mt-8 inline-flex items-center gap-2 rounded-2xl border border-brand-600 px-6 py-3 text-brand-700 hover:bg-brand-50 dark:text-brand-300 dark:hover:bg-slate-800">Связаться</a>
+        </div>
+      </div>
+
+      <p class="mt-6 text-xs text-slate-500 dark:text-slate-400">*Важно: сделки проводятся только в рамках правил конкретных платформ (например, YouTube, Google) и действующего законодательства. Никаких операций, нарушающих их условия обслуживания.*</p>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tight">Отзывы клиентов</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Реальные истории от покупателей и продавцов. Скриншоты по запросу.</p>
+      </div>
+
+      <div class="mt-10">
+        <div class="relative overflow-hidden">
+          <div id="reviewTrack" class="flex transition-transform duration-500 will-change-transform">
+            <!-- Review card template: duplicate or edit -->
+            <article class="w-full shrink-0 lg:w-1/3 p-2">
+              <div class="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex items-center gap-3">
+                  <a href="https://t.me/fle_business" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-brand-200 px-2 py-2 shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"><img src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1" alt="Аватар" class="h-10 w-10 rounded-full" /></a>
+                  <div>
+                    <div class="font-semibold">FLE</div>
+                    <div class="text-xs text-slate-500">Покупатель • 85 500 ₽</div>
+                  </div>
+                </div>
+                <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Сделка прошла за 10 минут. Получил доступ и чек‑лист. Рекомендую!</p>
+              </div>
+            </article>
+            <article class="w-full shrink-0 lg:w-1/3 p-2">
+              <div class="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex items-center gap-3">
+                  <a href="https://t.me/kojamberdieva_aigerim" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-brand-200 px-2 py-2 shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"><img src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1" alt="Аватар" class="h-10 w-10 rounded-full" /></a>
+                  <div>
+                    <div class="font-semibold">Aigerim K.</div>
+                    <div class="text-xs text-slate-500">Продавец • 7 000 ₽</div>
+                  </div>
+                </div>
+                <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Чёткие правила, деньги пришли сразу после подтверждения. Без нервов)</p>
+              </div>
+            </article>
+            <article class="w-full shrink-0 lg:w-1/3 p-2">
+              <div class="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex items-center gap-3">
+                  <a href="https://t.me/#" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-brand-200 px-2 py-2 shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"><img src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1" alt="Аватар" class="h-10 w-10 rounded-full" /></a>
+                  <div>
+                    <div class="font-semibold">Дмитрий</div>
+                    <div class="text-xs text-slate-500">Покупатель • 60 000 ₽</div>
+                  </div>
+                </div>
+                <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Хочу выразить благодарность Кириллу за быструю и выгодную сделку👍</p>
+              </div>
+            </article>
+            <article class="w-full shrink-0 lg:w-1/3 p-2">
+              <div class="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex items-center gap-3">
+                  <a href="https://t.me/plugjx" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-brand-200 px-2 py-2 shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"><img src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1" alt="Аватар" class="h-10 w-10 rounded-full" /></a>
+                  <div>
+                    <div class="font-semibold">Plug</div>
+                    <div class="text-xs text-slate-500">Покупатель • 275 500 ₽</div>
+                  </div>
+                </div>
+                <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Оперативно и качественно!</p>
+              </div>
+            </article>
+            <article class="w-full shrink-0 lg:w-1/3 p-2">
+              <div class="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex items-center gap-3">
+                  <a href="https://t.me/elenakrylova" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-brand-200 px-2 py-2 shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"><img src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1" alt="Аватар" class="h-10 w-10 rounded-full" /></a>
+                  <div>
+                    <div class="font-semibold">Elena K</div>
+                    <div class="text-xs text-slate-500">Покупатель • 14 000 ₽</div>
+                  </div>
+                </div>
+                <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Работала с Кириллом Анисимовым по сделке с покупкой канала. Всё прошло быстро и безопасно, как и обещано. Кирилл настоящий профессионал, который всё объяснил и провёл сделку прозрачно. Рекомендую как надёжного гаранта!</p>
+              </div>
+            </article>
+            <article class="w-full shrink-0 lg:w-1/3 p-2">
+              <div class="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex items-center gap-3">
+                  <a href="https://t.me/silence_808" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-brand-200 px-2 py-2 shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"><img src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1" alt="Аватар" class="h-10 w-10 rounded-full" /></a>
+                  <div>
+                    <div class="font-semibold">Silence</div>
+                    <div class="text-xs text-slate-500">Покупатель • 55 000 ₽</div>
+                  </div>
+                </div>
+                <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Спасибо за веденее сделки Кирилл! Надеюсь продолжим сотрудничать!💪</p>
+              </div>
+            </article>
+            <article class="w-full shrink-0 lg:w-1/3 p-2">
+              <div class="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex items-center gap-3">
+                  <a href="https://t.me/#" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-brand-200 px-2 py-2 shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"><img src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1" alt="Аватар" class="h-10 w-10 rounded-full" /></a>
+                  <div>
+                    <div class="font-semibold">Daniyar</div>
+                    <div class="text-xs text-slate-500">Продавец • 5 000 ₽</div>
+                  </div>
+                </div>
+                <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Обратился к Кириллу как к гаранту. Сделка прошла на ура! Без лишних слов, всё чётко и быстро. За сервис отдельный плюс. От души рекомендую.</p>
+              </div>
+            </article>
+            <article class="w-full shrink-0 lg:w-1/3 p-2">
+              <div class="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex items-center gap-3">
+                  <a href="https://t.me/beforedeparture" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-brand-200 px-2 py-2 shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"><img src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1" alt="Аватар" class="h-10 w-10 rounded-full" /></a>
+                  <div>
+                    <div class="font-semibold">Григорий Лепс</div>
+                    <div class="text-xs text-slate-500">Продавец • 37 000 ₽</div>
+                  </div>
+                </div>
+                <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Сделка прошла быстро и безопасно. Кирилл — надёжный гарант, всё было прозрачно. Рекомендую.</p>
+              </div>
+            </article>
+            <article class="w-full shrink-0 lg:w-1/3 p-2">
+              <div class="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+                <div class="flex items-center gap-3">
+                  <a href="https://t.me/vvolkovsk" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-brand-200 px-2 py-2 shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"><img src="https://i2.wp.com/vdostavka.ru/wp-content/uploads/2019/05/no-avatar.png?fit=512%2C512&ssl=1" alt="Аватар" class="h-10 w-10 rounded-full" /></a>
+                  <div>
+                    <div class="font-semibold">Владимир Волков</div>
+                    <div class="text-xs text-slate-500">Покупатель • 120 000 ₽</div>
+                  </div>
+                </div>
+                <p class="mt-3 text-sm text-slate-700 dark:text-slate-300">Работал с Кириллом Анисимовым, и впечатления самые лучшие. Не просто провёл сделку, а буквально сопроводил весь процесс, всё спокойно объяснил и ответил на все мои вопросы. Было очень комфортно, чувствуется, что человек действительно заботится о клиенте. Настоящий профессионал и надёжный партнёр. Спасибо!</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center justify-center gap-2">
+          <button class="review-btn rounded-xl border border-slate-200 px-3 py-2 text-sm hover:bg-slate-50 dark:border-slate-800 dark:hover:bg-slate-800" data-dir="-1">←</button>
+          <button class="review-btn rounded-xl border border-slate-200 px-3 py-2 text-sm hover:bg-slate-50 dark:border-slate-800 dark:hover:bg-slate-800" data-dir="1">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tight">Частые вопросы</h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Если остались вопросы — напишите в Telegram.</p>
+      </div>
+
+      <div class="mt-10 grid gap-4">
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft open:shadow-md dark:border-slate-800 dark:bg-slate-900">
+          <summary class="flex cursor-pointer list-none items-center justify-between text-left font-medium">Как подтвердить честность сторон?
+            <span class="transition-transform group-open:rotate-180">▾</span>
+          </summary>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">Собираем доказательства права на актив, фиксируем паспорт сделки и условия. Храню актив и оплату до выполнения условий.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <summary class="flex cursor-pointer list-none items-center justify-between text-left font-medium">Что с возвратами и спорами?
+            <span class="transition-transform group-open:rotate-180">▾</span>
+          </summary>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">Если условия не выполнены, средства возвращаются. Для спорных ситуаций есть чек‑лист и лог переговоров.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900">
+          <summary class="flex cursor-pointer list-none items-center justify-between text-left font-medium">Работаете с аккаунтами платформ?
+            <span class="transition-transform group-open:rotate-180">▾</span>
+          </summary>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">Работаем только в рамках правил платформ и закона. Никаких операций, нарушающих их ToS. При необходимости — альтернативные безопасные решения.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-gradient-to-br from-brand-600 to-accent-600 p-8 sm:p-12 text-white shadow-soft">
+        <div class="grid gap-6 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-bold tracking-tight">Готовы к безопасной сделке?</h3>
+            <p class="mt-2 text-white/90">Напишите в Telegram — отвечу быстро и помогу закрыть вопрос.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="https://t.me/kirilla02" target="_blank" class="inline-flex items-center gap-2 rounded-2xl bg-white px-6 py-3 font-semibold text-brand-700 hover:bg-white/90">Telegram</a>
+            <a href="mailto:aaiextyt@gmail.com" class="inline-flex items-center gap-2 rounded-2xl border border-white/70 px-6 py-3 hover:bg-white/10">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 py-8 text-sm dark:border-slate-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div class="text-slate-600 dark:text-slate-400">© <span id="year"></span> TrustLink. Все права защищены.</div>
+      <div class="text-slate-500 dark:text-slate-400">Дисклеймер: я — независимый гарант. Сделки проводятся в рамках закона и правил платформ.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // theme toggle
+    const themeBtn = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark');
+    }
+    themeBtn.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      const isDark = root.classList.contains('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    // simple reviews scroller
+    const track = document.getElementById('reviewTrack');
+    const buttons = document.querySelectorAll('.review-btn');
+    let index = 0;
+    const slides = track.children.length;
+
+    function updateSlider(dir) {
+      index = (index + dir + slides) % slides;
+      const width = track.children[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(${-index * width}px)`;
+    }
+
+    buttons.forEach(btn => btn.addEventListener('click', () => updateSlider(parseInt(btn.dataset.dir, 10))));
+    window.addEventListener('resize', () => updateSlider(0));
+  </script>
+</body>
+</html>
